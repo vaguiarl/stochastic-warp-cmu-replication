@@ -1,0 +1,131 @@
+{
+  "schema": "public-checker-and-numerical-findings-receipt-v1",
+  "date": "2026-10-12",
+  "scope": "Allowlisted scalar findings extracted and checked against the preserved original aggregate audits; not a new historical source reconstruction or household-estimator refit.",
+  "provenance": [
+    {
+      "source_basename": "wilfried_geometry_audit.20261009_v1.json",
+      "sha256": "655135ed5351db97b5eea6fc7fb549e19ab9fceec1a5abbf2e91e81a2dd22b1f",
+      "role": "Exhaustive received-column and regenerated-type audit"
+    },
+    {
+      "source_basename": "wilfried_replication_20261009_v2.json",
+      "sha256": "b6793f00d622b27d1d45091c1a0a8b1101be12ae95e774b3e8ff4dd6c2ac7bf4",
+      "role": "Fresh Julia focal estimator/projection/bootstrap report"
+    },
+    {
+      "source_basename": "summary.json",
+      "source_result_group": "wilfried_windows_20261009_v2",
+      "sha256": "12141fd6314b9680ec7ef1aa19545c785aa4c42a28bcfb028bde6cbca986e4b1",
+      "role": "All-19 Julia source-profile diagnostics and numerical reconciliation"
+    },
+    {
+      "source_basename": "wilfried_normalized_fit_robustness_20261010_v1.json",
+      "sha256": "05c97e6b5a991e37878bcc50ee8bd6b5da3f0c87f2fb440d53180ba381e2a61e",
+      "role": "All-19 complete-choice normalized-hull point distances"
+    },
+    {
+      "source_basename": "wilfried_replication_deep_dive_20261012_v1.json",
+      "sha256": "3f50db60ae1a035a766490896011d4a83d4d5aecea206809b82e455c063d4a56",
+      "role": "Saved focal statistic/tail and synthetic counterexample receipt"
+    }
+  ],
+  "received_columns": {
+    "windows": 19,
+    "all_columns_examined": 947924,
+    "direct_WARP_invalid_columns": 873769,
+    "all_saved_families_match_received_recursive_rule": true,
+    "full_Cartesian_cells": [9, 11, 12, 19],
+    "full_Cartesian_windows": [[1983, 1989], [1985, 1991], [1986, 1992], [1993, 1999]],
+    "remaining_order_dependent_subset_windows": 15,
+    "focal_cell": 12,
+    "focal_years": [1986, 1992],
+    "focal_received_types": 1680,
+    "focal_received_WARP_invalid_types": 1333,
+    "focal_correct_complete_WARP_types": 347,
+    "focal_correct_complete_RUM_types": 333
+  },
+  "synthetic_checker_example": {
+    "prices_by_budget": [[2, 3, 1], [3, 2, 3], [1, 3, 2]],
+    "choices_by_budget": [[2, 1, 1], [1, 2, 1], [1, 1, 2]],
+    "expenditures": [8, 10, 8],
+    "cross_costs_prices_as_rows_choices_as_columns": [[8, 9, 7], [11, 10, 11], [7, 9, 8]],
+    "six_budget_orders": [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]],
+    "received_prefix_rule_retains": [true, false, true, true, false, true],
+    "correct_WARP_rejects_all_six_orders": true
+  },
+  "focal_saved_result": {
+    "family": "received_not_WARP",
+    "J_recomputed": 0.0013394649346619787,
+    "J_rounded_6": 0.001339,
+    "B": 1000,
+    "upper_tail_count": 297,
+    "p": 0.297,
+    "role": "Immutable supplied workspace reconciliation; not a fresh bootstrap"
+  },
+  "focal_fresh_Julia_results": [
+    {
+      "family": "received_not_WARP",
+      "types": 1680,
+      "J_unrounded": 0.001339463207501505,
+      "J_rounded_6": 0.001339,
+      "B": 1000,
+      "upper_tail_count": 272,
+      "p_tau0_diagnostic": 0.272
+    },
+    {
+      "family": "correct_complete_RUM",
+      "types": 333,
+      "J_unrounded": 10.946927352032096,
+      "J_rounded_6": 10.946927,
+      "B": 1000,
+      "upper_tail_count": 12,
+      "p_tau0_diagnostic": 0.012
+    },
+    {
+      "family": "correct_complete_WARP",
+      "types": 347,
+      "J_unrounded": 10.946927352032057,
+      "J_rounded_6": 10.946927,
+      "B": 1000,
+      "upper_tail_count": 12,
+      "p_tau0_diagnostic": 0.012
+    }
+  ],
+  "all19_source_profile_diagnostics": {
+    "nominal_alpha": 0.05,
+    "both_reject_cells": [12, 13, 14],
+    "both_nonreject_windows": 16,
+    "WARP_nonreject_RUM_reject_cells": [],
+    "focal_corrected_RUM_J_interval_from_all19_report": [10.946927290953003, 10.946927352032029],
+    "maximum_regenerated_probability_difference": 1.3815526500593478e-10,
+    "maximum_regenerated_price_difference": 2.0816681711721685e-17
+  },
+  "normalized_complete_WARP_point_results": {
+    "target_policy": "raw_affine",
+    "metric": "full_coordinate_squared_Euclidean_distance_to_mass_one_convex_hulls",
+    "window_weight_convention": "N_window/46391",
+    "N_unique_annual_observations": 46391,
+    "weighted_RUM_squared_distance": 0.004903104088781235,
+    "weighted_WARP_squared_distance": 0.0047861881467784395,
+    "weighted_distance_gain": 0.00011691594200299158,
+    "relative_weighted_distance_reduction": 0.023845290633438987,
+    "positive_resolved_windows": [3, 4, 5, 6, 7],
+    "windowwise_reductions": [
+      {"cell": 3, "years": [1977, 1983], "reduction_fraction": 0.08740117444220706},
+      {"cell": 4, "years": [1978, 1984], "reduction_fraction": 0.04182311598208229},
+      {"cell": 5, "years": [1979, 1985], "reduction_fraction": 0.022229709684083016},
+      {"cell": 6, "years": [1980, 1986], "reduction_fraction": 0.040605388077345865},
+      {"cell": 7, "years": [1981, 1987], "reduction_fraction": 0.10632250905174644}
+    ],
+    "numerical_intervals_are_NOT_sampling_confidence_intervals": true
+  },
+  "limits": {
+    "native_MATLAB_execution_claimed": false,
+    "historical_generating_revision_confirmed": false,
+    "complete_corrected_five_good_table_reproduced": false,
+    "intent_or_endorsement_inferred": false,
+    "UK_sampling_validity_or_optimal_c_proved": false,
+    "household_records_or_identifiers_included": false
+  }
+}

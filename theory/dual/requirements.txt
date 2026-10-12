@@ -1,0 +1,4 @@
+# Exact versions used for the data-free validation tests.
+numpy==2.3.4
+scipy==1.16.2
+pytest==8.4.2

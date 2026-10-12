@@ -1,0 +1,13 @@
+.DS_Store
+.julia/
+.venv/
+.lake/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.olean
+*.ilean
+external/
+generated/
+results/replay_*/
+*.zip
