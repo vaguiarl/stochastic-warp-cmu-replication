@@ -164,3 +164,13 @@ tables still require confirmation. Native MATLAB/CVX was not run, and the
 complete corrected five-good table has not been reproduced. No result here
 asserts a general equivalence of GARP and SARP: the current transitive benchmark
 uses strict open patches and excludes intersection/tie atoms.
+
+## Numerical receipts
+
+The [checker findings receipt](data/checker_findings_receipt.json) records
+the allowlisted original audit findings and their content hashes, including
+the synthetic example and the distinction between saved and fresh focal tails.
+The [release validation](data/release_validation.json) records fresh all-19
+type/projection and utility-witness checks, together with reaggregation of all
+stored joint tails at c=0.5,1,2 and the per-window source-profile bootstrap tails.
+Replaying stored aggregate draws does not itself refit household estimators.
